@@ -1,0 +1,281 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.div1 { grid-area: 1 / 1 / 2 / 7; }
+
+.div1{
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  background-color: purple;
+  background-image: linear-gradient(to right, white, #74FCE2);
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-family: 'Nosifer', cursive;
+}
+ul {
+  list-style-type: none;
+
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.active {
+  background-color: #0084ff;
+}
+  img {
+    width: 100%; 
+    height: auto;
+  }
+  h2 {
+    margin-bottom: .5em;
+  }
+  .Chicago{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-gap: 1em;
+  }
+
+
+  .Quinteto2021 {
+    position: relative;
+  }
+
+  .Bulls {
+    line-height: 0;
+    overflow: hidden;
+  }
+
+  .Bulls img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+
+  .Bulls2021 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .Quinteto2021:hover .Bulls2021{
+    opacity: 1;
+  }
+
+  .Quinteto2021:hover .Bulls img {
+    filter: blur(2px);
+  }
+
+
+  @media (hover: none) { 
+    .Bulls2021 {
+      opacity: 1;
+    }
+    .Bulls img {
+      filter: blur(2px);
+    }
+  }
+  .footer {
+    color: white; background-color:rgba(14,14,14,255);
+     padding: 2px;
+     text-align: center;
+   }
+     #searchbar{
+     margin-left: 15%;
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      width: 30%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+   input[type=text]:focus {
+     width: 70%;
+   }
+ 
+  #list{
+    font-size:  1.5em;
+    margin-left: 90px;
+    color: white;
+   }
+ 
+.animals{
+   display: list-item;    
+  } 
+
+
+/*Aquí debajo va el FOOTER*/
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+    background-color: rgb(61, 61, 61);
+    
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+/*Aquí debajo va el slider*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider{
+width: 100%;
+height: 600px;
+overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  animation: cambio 20s infinite alternate linear;
+  width: 400%;
+}
+.slider li{
+  width: 100%;
+  list-style: none;
+}
+.slider img{
+  width: 100%;
+  height: 50%;
+}
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+  
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+  
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+  
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+.slider, .slider ul, .slider img{
+  height: 100vh;
+}
+}
+
+
+
+
+#spanmenu {
+  border-radius: 100%;
+  font-size: 30px;
+  padding: 2px;
+}
+
+.bolas, a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang-"en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="anime.css">
+        <link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Nosifer & display = swap "rel =" stylesheet ">
+        <title>OTAKULAND</title>
+        <body>
+          <div class="div1"> Anime</div>
+          <ul style="background-color: #555555">
+            <li><a href="home.html">home</a></li>
+            <li><a href="manga.html">Manga</a></li>
+            <li><a class="active" href="anime.html">Anime</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li style="float: right;"><input id="searchbar" onkeyup="search_animal()" type="text"
+                name="buscar" placeholder="buscar..." style="width: 300px; height: 55px;" ></li>
+          </ul></br>
+    <script>
+    function search_animal() {
+        let input = document.getElementById('searchbar').value
+        input=input.toLowerCase();
+        let x = document.getElementsByClassName('animals');
+          
+        for (i = 0; i < x.length; i++) { 
+            if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                x[i].style.display="none";
+            }
+            else {
+                x[i].style.display="list-item";                 
+            }
+        }
+    }</script>
+
+<div class="slider">
+    <ul>
+        <li>
+            <img src="https://areajugones.sport.es/wp-content/uploads/2021/02/anime-2021.jpg">
+        </li>
+        <li>
+            <img src="https://estaticos-cdn.elperiodico.com/clip/37da45b6-4fff-42ea-92e0-70470d621d5b_alta-libre-aspect-ratio_default_0.jpg">
+        </li>
+        <li>
+            <img src="https://www.industriaanimacion.com/wp-content/uploads/2021/08/Cover-9-960x504.jpg">
+        </li>
+        <li>
+            <img src="https://i0.wp.com/thenerddaily.com/wp-content/uploads/2018/08/Reasons-To-Watch-Anime.jpg?fit=1000%2C742&ssl=1">
+        </li>
+    </ul>
+</div></br>
+
+          
+            <div>
+            <h2 style="text-align: center;  color: white; background-color:rgba(14,14,14,255);">destacados</h2>
+
+            <div id='list'>
+            <div class="Chicago"> 
+            <div class="animals">
+            <article class="Quinteto2021">
+                <a class="Bulls2021" href="https://www3.animeflv.net/browse?q=plunderer" >  plunderer</a>
+
+                <div class="Bulls">
+                    <a href="#">
+                        <img width="50%" height="50%" src="https://www.anmosugoi.com/wp-content/uploads/2021/11/Plunderer-anime-min.jpg" alt="Lonzo Ball"> </a>
+                </div>
+            </article></div>
+            <div class="animals">
+            <article class="Quinteto2021">
+                <a class="Bulls2021" href="https://www3.animeflv.net/browse?q=masamune" >  Masamune-kun no Revenge</a>
+
+                <div class="Bulls">
+                    <a href="#">
+                        <img width="50%" height="50%" src="https://1.bp.blogspot.com/-j6DarJ_8ZAw/YC319rH6pOI/AAAAAAAAqSo/L4UEfVTpQyAAsoQV6TqApmDY1k8lcUCNACLcBGAsYHQ/s0/Episodios-Masamune-kun-no-Revenge-Relleno-Orden-Cronologico.jpg" alt="Lonzo Ball"> </a>
+                </div>
+            </article></div>
+            <div class="animals">
+            <article class="Quinteto2021">
+                <a class="Bulls2021" href="https://www3.animeflv.net/browse?q=love+chunibyo+" >  Chuunibyou demo Koi ga Shitai!</a>
+
+                <div class="Bulls">
+                    <a href="#">
+                        <img width="50%" height="50%" src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/1/5/3/6/15366fcfb7160925898d69c6eee56dc9.jpg" alt="Lonzo Ball"> </a>
+                </div>
+            </article></div>
+            <div class="animals">
+            <article class="Quinteto2021">
+                <a class="Bulls2021" href="https://www3.animeflv.net/browse?q=kono+oto" >  kono oto tomare</a>
+
+                <div class="Bulls">
+                    <a href="#">
+                        <img width="50%" height="50%" src="https://1.bp.blogspot.com/-v_dTym9li2s/YJXrhEBB4BI/AAAAAAAArFQ/fZXwua3uJPQDZ4DqD7JxM8Ns4IHF-KuugCLcBGAsYHQ/s0/Episodios-Kono-Oto-Tomare-Relleno-Orden-Cronologico.jpg" alt="Lonzo Ball"> </a>
+                </div>
+            </article></div>
+
+
+        </div>
+    </div>
+        
+
+    </div><br>
+
+    
+    <div class="bolas">
+        <span id="spanmenu"><a href="anime.html">1</a></span>
+        <span id="spanmenu"><a href="anime2.html">2</a></span>
+        <span class="active" id="spanmenu"><a href="anime3.html">3</a></span>
+    </div>
+    
+  
+
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="Images/logo-magtimus.png" alt="">
+                </div>
+                <div class="terms">
+                    <p></p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Redireccion</h2>
+                <a href="home.html">Home</a>
+                <a href="manga.html">Manga</a>
+                <a href="anime.html">Anime</a>
+                <a href="tienda.html">Tienda</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Paginas conocidas</h2>
+                <a href="https://www3.animeflv.net/">Aniemflv</a>
+                <a href="https://www.animefenix.com/">Aniemfenix</a>
+                <a href="https://inmanga.com/">InManga</a>
+                <a href="https://mangalandia.com/">Mangalandia</a>              
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://twitter.com/home?lang=es"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2021 <b>Jesus gonzalez</b></p>
+        </div>
+    </footer>
+        
+
+        </body>
+
+            
+        </html>
